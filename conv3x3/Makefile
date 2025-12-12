@@ -9,7 +9,7 @@ $(TARGET): $(OBJ)
 	$(CXX) -o $@ $^
 
 %.o: %.cpp
-	$(CXX) $(CXXFLAGS) -c $< -o $@
+	$(CXX) $(CXXFLAGS) -fno-tree-vectorize -c $< -o $@
 
 .PHONY: clean
 clean:
