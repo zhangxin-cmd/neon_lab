@@ -2,7 +2,8 @@
 #include <cmath>
 #include <vector>
 
-inline double max_abs_diff(const std::vector<float>& a, const std::vector<float>& b) {
+template <typename T>
+inline double max_abs_diff(const std::vector<T>& a, const std::vector<T>& b) {
     double m = 0.0;
     size_t n = a.size();
     for (size_t i = 0; i < n; ++i) {
